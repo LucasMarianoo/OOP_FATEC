@@ -2,14 +2,19 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package ex01;
+package LP01;
 
 import java.util.Scanner;
 
 /**
  *
- * @author skynn
+ * Em época de pouco dinheiro, os comerciantes estão procurando aumentar suas 
+ * vendas oferecendo desconto. Faça um programa que possa entrar com o nome de 
+ * um produto e seu valor unitário e calcular e exibir um novo valor com um 
+ * desconto de 9%.
+ * 
  */
+
 public class EX01 {
 
     /**
@@ -31,8 +36,10 @@ public class EX01 {
         
         desconto = valor * 1.09f;
         
-        System.out.println("Valor original do produto " + produto + ": " + valor +
-                "\nValor com desconto: " + desconto);
+        System.out.println("Valor original do produto " 
+                + produto + ": " 
+                + valor 
+                + "\nValor com desconto: " + desconto);
         
     }
     
