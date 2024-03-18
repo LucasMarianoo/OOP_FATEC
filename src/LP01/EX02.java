@@ -8,8 +8,11 @@ import java.util.Scanner;
 
 /**
  *
- * @author skynn
+ * Para vários tributos, a base de cálculo é o salário mínimo. 
+ * Fazer um programa que leia o valor do salário mínimo e o valor do salário  
+ * de uma pessoa. Calcular e mostrar quantos salários mínimos ela ganha.
  */
+
 public class EX02 {
 
     /**
