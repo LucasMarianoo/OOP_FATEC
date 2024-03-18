@@ -2,18 +2,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-
-package LP01;
+package lp02;
 
 import java.util.Scanner;
 
 /**
  *
- * Faça um programa que leia uma temperatura em graus Centígrados e apresente-a 
- * convertida em graus Fahrenheit. A fórmula de conversão é:
+ * @author skynn
  */
-
-public class EX04 {
+public class EX01 {
 
     /**
      * @param args the command line arguments
@@ -21,16 +18,22 @@ public class EX04 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        float celsius, fahrenheit;
-        
         Scanner input = new Scanner(System.in);
+
+        int num;
+        float resto;
         
-        System.out.println("Digite a temperatura em Celsius: ");
-        celsius = input.nextFloat();
+        System.out.println("Digite um número para verificar se é "
+                + "múltiplo de 3: \n");
+        num = input.nextInt();
         
-        fahrenheit = (9f * celsius + 160f) / 5f;
-        
-        System.out.println(fahrenheit);
+        if ((resto = num % 3) == 0) {
+            
+            System.out.println(num + " é múltiplo de 3");
+        } else {
+            
+            System.out.println(num + " não é múltiplo de 3");
+        }       
         
     }
     

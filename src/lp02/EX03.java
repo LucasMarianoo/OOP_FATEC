@@ -2,18 +2,16 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
+package lp02;
 
-package LP01;
-
+import static lp02.Lucro.lucro;
 import java.util.Scanner;
 
 /**
  *
- * Faça um programa que leia uma temperatura em graus Centígrados e apresente-a 
- * convertida em graus Fahrenheit. A fórmula de conversão é:
+ * @author skynn
  */
-
-public class EX04 {
+public class EX03 {
 
     /**
      * @param args the command line arguments
@@ -21,17 +19,13 @@ public class EX04 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        float celsius, fahrenheit;
+        float produto;
         
         Scanner input = new Scanner(System.in);
+        System.out.println("Digite o valor do produto: ");
+        produto = input.nextFloat();
         
-        System.out.println("Digite a temperatura em Celsius: ");
-        celsius = input.nextFloat();
-        
-        fahrenheit = (9f * celsius + 160f) / 5f;
-        
-        System.out.println(fahrenheit);
-        
-    }
-    
+        lucro(produto);
+          
+    }    
 }
