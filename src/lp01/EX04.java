@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 
-package LP01;
+package lp01;
 
 import java.util.Scanner;
 
