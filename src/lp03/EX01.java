@@ -18,18 +18,19 @@ public class EX01 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        
-        JOptionPane.showMessageDialog(null, "Programa para calcular números pares");
-        String userNum = JOptionPane.showInputDialog(null, "Digite um número");
-        
-        int num;
+        // TODO code application logic here       
         
         try {
-            num = Integer.parseInt(userNum);
+            JOptionPane.showMessageDialog(null, "Programa para calcular números pares");
+            String range1 = JOptionPane.showInputDialog(null, "Digite o intervalo inicial: \n");
+            String range2 = JOptionPane.showInputDialog(null, "Digite o intervalo final: \n");
+            
+            int num1, num2;
+            
+            num1 = Integer.parseInt(range1);
+            num2 = Integer.parseInt(range2);
         
-        
-            for (int i = 0; i <= num; i++) {
+            for (int i = num1; i <= num2; i++) {
                 if (i % 2 == 0) {                
                     System.out.println(i);
                 }

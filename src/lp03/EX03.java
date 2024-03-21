@@ -28,7 +28,7 @@ public class EX03 {
         range2 = input.nextInt();
         
         
-        primo.setNum(range1, range2);
+        primo.setRange(range1, range2);
         
         primo.checkPrimo();
     }

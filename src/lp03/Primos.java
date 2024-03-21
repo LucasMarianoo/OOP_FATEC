@@ -18,7 +18,7 @@ public class Primos {
         
     }
     
-    public void setNum(int range1, int range2) {
+    public void setRange(int range1, int range2) {
         this.range1 = range1;
         this.range2 = range2;
     }    

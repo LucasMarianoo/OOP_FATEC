@@ -9,5 +9,9 @@ package lp03;
  * @author skynn
  */
 public class EX04 {
+    public static void main(String[] args) {
+        
+        
+    }
     
 }
