@@ -10,23 +10,38 @@ package lp03;
  */
 public class Primos {
     
-    int num;
-    int count = 1;
-    
-    
-    public void setNum(int userNum) {
-        num = userNum;
-        
-    }    
-    
+    private int range1, range2, primo;    
+       
     public Primos() {
-        num = 0;
+        range1 = 0;
+        range2 = 0;
         
     }
     
-    public int checkPrimo() {
-        for (int i = 1; i <= num; i++) {
-            if ()
+    public void setNum(int range1, int range2) {
+        this.range1 = range1;
+        this.range2 = range2;
+    }    
+    
+    public void checkPrimo() {
+        for (int i = range1; i <= range2; i++) {
+            
+            if (i == 1 || i == 0)
+                continue;
+            
+            primo = 1;
+            
+            for (int j = 2; j <= i / 2; j++) {
+                if (j % i == 0) {
+                    primo = 0;
+                    break;
+                }
+            }
+            
+            if (primo == 1)
+                System.out.println(i);
+
+            
         }
     } 
 }
