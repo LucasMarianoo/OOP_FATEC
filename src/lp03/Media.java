@@ -57,20 +57,20 @@ public class Media {
         
         float media;
         
-        media = (p1 + p2 + trab) / 3;
+        media = ((p1 * 0.35f) + (p2 * 0.5f) + (trab * 0.15f));
         
         if (media >= 6) {
             status = 1;
         } else {
             if (p1 < p2) {
                 p1 = p3;
-                media = (p1 + p2 + trab) / 3;
+                media = ((p1 * 0.35f) + (p2 * 0.5f) + (trab * 0.15f));
                 if (media >= 6) {
                     status = 1;
                 }
             } else if (p2 < p1) {
                 p2 = p3;
-                media = (p1 + p2 + trab) / 3;
+                media = ((p1 * 0.35f) + (p2 * 0.5f) + (trab * 0.15f));
                 if (media >= 6) {
                     status = 1;
                 } else {
