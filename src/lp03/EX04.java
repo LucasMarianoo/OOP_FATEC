@@ -8,7 +8,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author skynn
+ * Um programa que calcule a média de uma aluno nos moldes da Fatec Zona SUL.
  */
 public class EX04 {
     public static void main(String[] args) {              

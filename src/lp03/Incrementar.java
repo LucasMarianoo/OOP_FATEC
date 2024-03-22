@@ -39,6 +39,5 @@ public class Incrementar {
         for (int i = 0; i <= limite; i += incremento) {
             System.out.println(i);
         }
-    }   
-    
+    }       
 }

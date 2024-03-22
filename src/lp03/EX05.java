@@ -8,8 +8,13 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author skynn
+ * Criar um programa que leia umnúmero que será o limite superior de um 
+ * intervalo e o incremento. Exibir todos os números naturais no intervalo 
+ * de 0 até esse número.  
+ * Suponha que os dois números lidos são maiores que zero. 
+ * Exemplo: Limite superior: 20Incremento: 5Saída: 0  5  10  1520
  */
+
 public class EX05 {
     public static void main(String[] args) {
         
