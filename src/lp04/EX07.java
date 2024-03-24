@@ -4,6 +4,8 @@
  */
 package lp04;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * Criar um programa que retorne o fatorial de um número, usando um método 
@@ -13,4 +15,15 @@ package lp04;
 
 public class EX07 {
     
+    public static void main(String[] args) {
+        
+        String n = JOptionPane.showInputDialog(null, "Digite o número: ");
+        int num = Integer.parseInt(n);
+    
+        Fatorial fat = new Fatorial(num);
+        
+        JOptionPane.showMessageDialog(null, "Fatorial de " + 
+                num + " é: " + fat.calcFatorial(num) );
+    
+    }   
 }

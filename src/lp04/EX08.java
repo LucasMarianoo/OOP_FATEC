@@ -4,6 +4,8 @@
  */
 package lp04;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * Criar umprograma que verifique se um número é primo ou não, através de um 
@@ -11,5 +13,13 @@ package lp04;
  */
 
 public class EX08 {
-    
+    public static void main(String[] args) {
+        
+        String n = JOptionPane.showInputDialog(null, "Digite um número inteiro: ");
+        int num = Integer.parseInt(n);
+        
+        Primo primo = new Primo(num);
+        
+        primo.verificaPrimo();
+    }
 }
