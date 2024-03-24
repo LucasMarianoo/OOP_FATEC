@@ -13,8 +13,7 @@ import javax.swing.JOptionPane;
 public class EX04 {
     public static void main(String[] args) {              
         
-        try {
-            Media media = new Media();
+        try {            
         
             JOptionPane.showMessageDialog(null, "Cálculo de média FATEC");
             String inputP1 = JOptionPane.showInputDialog(null, "Digite a nota P1");
@@ -28,12 +27,8 @@ public class EX04 {
             p2 = Float.parseFloat(inputP2);
             p3 = Float.parseFloat(inputP3);
             trab = Float.parseFloat(inputTrab);
-
-            media.setP1(p1);
-            media.setP2(p2);
-            media.setP3(p3);
-            media.setTrab(trab);
-
+            
+            Media media = new Media(p1, p2, p3, trab);
 
             if (media.calcMedia(media.getP1(), media.getP2(), media.getP3(), media.getTrab()) == 1) {
                 JOptionPane.showMessageDialog(null, "Aprovado");
